@@ -1,0 +1,115 @@
+html, body {
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#navbar{
+    width: 18%;
+    min-width: 200px;
+    background-color:blanchedalmond;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 15px;
+}
+
+#navbar li{
+    font-size: 20px;
+    list-style: none;
+    text-indent: 0;
+    margin-left: -40px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    
+}
+
+#navbar a{
+    text-decoration: none;
+    color:brown;
+}
+
+#main-doc {
+    position: relative; /* Pastikan tidak absolute */
+    top: 0;
+    left: 150px; 
+    width: 70%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+}
+
+
+code.codeblock {
+    display: block;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    white-space: pre-wrap; /* Ensures the code wraps within the block */
+}
+
+code:not(.codeblock){
+    background-color:#f4f4f4;
+    color:blue;
+}
+
+h2{
+    margin-top: 40px;
+}
+
+p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+main ul{
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
+section{
+    margin-bottom: 60px;
+}
+/* Media Query untuk layar kecil */
+@media (max-width: 600px) {
+    html, body {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    #navbar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+   
+    #main-doc {
+        width: 100%;
+        max-width: 100%; /* Mencegah konten keluar layar */
+        padding: 10px;
+        margin: auto;
+        text-align: center;
+        word-wrap: break-word;
+        left:0;
+    }
+    
+    
+
+    #main-doc h2, #main-doc p {
+        text-align: center; /* Pastikan semua teks dalam konten juga rata tengah */
+    }
+}

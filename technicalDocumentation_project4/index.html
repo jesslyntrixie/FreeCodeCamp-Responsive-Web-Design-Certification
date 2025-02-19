@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="freeCodeCamp Technical Documentation Page practice project" />
+        <title>Technical Documentation Page</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+        <nav id="navbar">
+            <header><h2 id="nav-title">CSS Flexbox Technical Documentation</h2></header>
+            <ul>
+              <li><a href="#introduction" class="nav-link">Introduction</a></li>
+              <li><a href="#flex_container_properties" class="nav-link">Flex Container Properties</a></li>
+              <li><a href="#flex_item_properties" class="nav-link">Flex Item Properties</a></li>
+              <li><a href="#alignment_and_justification" class="nav-link">Alignment and Justification</a></li>
+              <li><a href="#use_cases" class="nav-link">Use Cases</a></li>
+            </ul>
+          </nav>
+
+        <main id="main-doc">
+            <section class="main-section" id="introduction">
+                <header><h2>Introduction</h2></header>
+                
+                <p>CSS Flexbox (Flexible Box) is a layout model designed to create dynamic and responsive web layouts with ease. Unlike traditional block or inline layouts, Flexbox allows items to resize, align, and distribute space dynamically inside a container.</p>
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                <li>Align items horizontally or vertically with ease.</li>
+                <li>Dynamically resize elements based on available space.</li>
+                <li>Create layouts without needing floats or positioning hacks.</li>
+                </ul>
+
+                <p>A simple Flexbox structure consists of:</p>
+                <ul>
+                <li>Flex container: The parent element with display: flex;</li>
+                <li>Flex items: The direct child elements inside the flex container.</li>
+                </ul>
+
+            </section>
+            <section class="main-section" id="flex_container_properties">
+                <header><h2>Flex Container Properties</h2></header>
+                <p>To enable Flexbox, apply display: flex; to a parent element:</p>
+                <code class="codeblock">
+                .container {
+                display: flex;
+                }
+                </code>
+
+                <p>Main Properties:</p>
+                <table>
+                <thead>
+                    <tr>
+                    <th>Property</th>
+                    <th>Description</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                    <td><code>display</code></td>
+                    <td>Enables Flexbox (<code>flex</code> or <code>inline-flex</code>).</td>
+                    </tr>
+                    <tr>
+                    <td><code>flex-direction</code></td>
+                    <td>Defines the main axis (<code>row</code>, <code>column</code>, <code>row-reverse</code>, <code>column-reverse</code>).</td>
+                    </tr>
+                    <tr>
+                    <td><code>flex-wrap</code></td>
+                    <td>Controls wrapping of items (<code>nowrap</code>, <code>wrap</code>, <code>wrap-reverse</code>).</td>
+                    </tr>
+                    <tr>
+                    <td><code>justify-content</code></td>
+                    <td>Aligns items along the main axis.</td>
+                    </tr>
+                    <tr>
+                    <td><code>align-items</code></td>
+                    <td>Aligns items along the cross axis.</td>
+                    </tr>
+                    <tr>
+                    <td><code>align-content</code></td>
+                    <td>Aligns multiple lines of content.</td>
+                    </tr>
+                </tbody>
+                </table>
+
+                <p>Example:</p>
+
+                <code class="codeblock">
+                .container {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                }
+                </code>
+            </section>
+            
+            <section class="main-section" id="flex_item_properties">
+                <header><h2>Flex Item Properties</h2></header>
+                <p>Each child (flex item) inside a flex container can be controlled individually:</p>
+
+                <table>
+                <thead>
+                    <tr>
+                    <th>Property</th>
+                    <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td><code>flex-grow</code></td>
+                    <td>Defines how much an item should grow if space is available.</td>
+                    </tr>
+                    <tr>
+                    <td><code>flex-shrink</code></td>
+                    <td>Defines how much an item should shrink if space is limited.</td>
+                    </tr>
+                    <tr>
+                    <td><code>flex-basis</code></td>
+                    <td>Defines the initial size of an item before flexing.</td>
+                    </tr>
+                    <tr>
+                    <td><code>order</code></td>
+                    <td>Changes the visual order of items.</td>
+                    </tr>
+                    <tr>
+                    <td><code>align-self</code></td>
+                    <td>Overrides <code>align-items</code> for an individual item.</td>
+                    </tr>
+                </tbody>
+                </table>
+
+                <p>Example:</p>
+
+                <code class="codeblock">
+                    .item {
+                        flex-grow: 1;
+                        flex-shrink: 0;
+                        flex-basis: 100px;
+                        order: 2;
+                        align-self: flex-start;
+                        }
+                </code>
+            </section>
+        
+            <section class="main-section" id="alignment_and_justification">
+                <header><h2>Alignment and Justification</h2></header>
+                <p><strong>Justify Content (Main Axis Alignment)</strong></p>
+                <p>Controls how items are distributed along the main axis:</p>
+                <code class="codeblock">
+                    justify-content: flex-start; /* Default */
+                    justify-content: flex-end;
+                    justify-content: center;
+                    justify-content: space-between;
+                    justify-content: space-around;
+                    justify-content: space-evenly;
+                </code>
+
+                <p><strong>Align Items (Cross Axis Alignment)</strong></p>
+                <p>Aligns items along the perpendicular axis:</p>
+                <code class="codeblock">
+                    align-items: flex-start;
+                    align-items: flex-end;
+                    align-items: center;
+                    align-items: stretch; /* Default */
+                    align-items: baseline;
+                </code>
+
+                <p><strong>Align Content (Multi-line Alignment)</strong></p>
+                <p>Used when there are multiple rows/columns:</p>
+                <code class="codeblock">
+                    align-content: flex-start;
+                    align-content: flex-end;
+                    align-content: center;
+                    align-content: space-between;
+                    align-content: space-around;
+                    align-content: space-evenly;
+                </code>
+            </section>
+
+            <section class="main-section" id="use_cases">
+                <header><h2>Use Cases</h2></header>
+                <p><strong>Example 1: Centering Content</strong></p>
+                <p>To center content both horizontally and vertically within a container:</p>
+                <code class="codeblock">
+                    .container {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100vh;
+                    }
+                </code>
+
+                <p><strong>Example 2: Responsive Navbar</strong></p>
+                <p>To create a responsive navbar with space between items:</p>
+                <code class="codeblock">
+                    .navbar {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+                </code>
+
+                <p><strong>Example 3: Equal Columns with Flexbox</strong></p>
+                <p>To create equal-width columns with Flexbox:</p>
+                <code class="codeblock">
+                    .container {
+                        display: flex;
+                    }
+                    .item {
+                        flex: 1;
+                        margin: 10px;
+                    }
+                </code>
+            </section>
+            
+        </main>
+    </body>
+</html>

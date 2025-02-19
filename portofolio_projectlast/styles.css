@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+}
+
+:root{
+    --color1:#1C0C5B;
+    --color2: #3D2C8D;
+    --color3: #916BBF;
+    --color4: #C996CC;
+    --textcolor1: #2B2B2B;
+    --textcolor2: white;
+    --textcolor3: black;
+
+}
+
+/* NAVBAR -----------------------------------------*/
+#navbar{
+    position: fixed;
+    top:0px;
+    left:0px;
+    width: 100vw;
+    height: 10vh;
+    background-color: var(--color4 );
+    z-index: 3;
+
+}
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    list-style-type: none;
+    text-decoration: none;  
+    margin-top: 20px; 
+    margin-right: 20px;  
+}
+
+#navbar ul li a{
+    margin: auto 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: var(--textcolor3);
+    font-size: 1.5rem;  
+}
+
+/* WELCOME SECTION ----------------------------------------- */
+
+#welcome-section{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom left, var(--color1) 65%, black);
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+#titleee{
+    position: absolute;
+    /* top: 50vh; */  
+}
+
+h1{
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    font-family: Poppins;
+    font-weight:bolder;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-family: Poopins, sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+/* PROJECTS SECTION ---------------------------------------------------- */
+
+#projects{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--color2);
+    color: var(--textcolor2);
+
+}
+
+#projects h1{
+    margin-top: 80px; 
+}
+
+
+.project-tile img{
+    height: 210px;
+    width: 280px;
+    margin-bottom: 20px;
+}
+
+#project-tiles{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:center;
+   
+}
+
+.project-tile{
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.project-tile a{
+    text-decoration: none;
+    color: var(--textcolor2);
+}
+
+.projecttiletext{
+    background-color: var(--color4);
+    height: 60px;
+    width: 280px;
+    margin-top: -20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.project-tile a:hover::before{
+    content: '<';
+    color: yellow;
+    transition: all 0.3s ease;
+}
+
+.project-tile a:hover::after{
+    content: '/>';
+    color: yellow;
+    transition: all 0.3s ease;
+}
+
+#seemore a{
+    text-decoration: none;
+    color: yellow;
+}
+
+#seemore a:hover{
+    color: var(--hovercolor);
+}
+
+/* CONTACTS SECTION ----------------------------------------------------- */
+
+#contact{
+    width: 100vw;
+    height: 100vh;
+    background-color:rgb(237, 255, 237);
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background: linear-gradient(to bottom left, var(--color1) 65%, black);
+    
+}
+
+.contactlinkcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.contactlink{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#contacttext{
+    margin-top: 20vh;
+    color: white;
+}
+
+.contactlink a{
+    text-decoration: none;
+    margin: auto 20px; 
+    color: yellow;
+}
+
+.contactlink a i{
+    margin: 10px;
+}
+
+
+
+

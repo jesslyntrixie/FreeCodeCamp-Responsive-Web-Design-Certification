@@ -1,0 +1,147 @@
+html{
+  background-color: white;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+#navigate-to{
+  display: inline-block;
+  text-align: right; 
+  color:rgb(219, 91, 112);
+}
+
+nav{
+  background-color:rgb(255, 230, 234);
+  width: 100%;
+  margin: -15px auto;
+  height: 2.5rem;
+  display: flex;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+}
+
+nav ul{
+  list-style: none;
+  display: inline-block;
+  
+}
+
+nav ul li{
+  display: inline-block;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* Pusatkan semua child div */
+  justify-content: center; 
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(219, 91, 112);
+}
+
+.centered-div {
+  width: 60%;
+  max-width: 600px;
+  margin: 0px auto;
+  padding: 0px;
+  text-align: left;
+  background-color: white;
+}
+
+
+#plot-div{
+  text-align: left;
+  width: 80%;
+  min-width: 250px;
+ 
+}
+
+#img-div{
+  text-align: center;
+  background-color: rgb(255, 230, 234);
+  width:100%;
+  margin-bottom: 20px;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#img-div img{
+  margin: auto auto;
+  width: 60%;
+  min-width: 200px;
+  max-width:100%;
+  height: auto;
+}
+
+img{
+  display: block;
+}
+
+#biodata-div{
+  text-align: left;
+  width: 80%;
+  min-width: 250px;
+  
+  /*border: 2px solid black;  
+  padding: 10px; */
+}
+
+
+ul{
+  padding: 0 20px;
+}
+
+ul li{
+  padding:0 0;
+}
+
+#title, #tribute-info{
+  text-align: center;
+}
+
+footer{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:lightslategray;
+  text-align: center;
+  margin: auto 10px;
+}
+
+#tribute-link{
+  color:rgb(219, 91, 112);
+}
+
+#tribute-link:hover{
+  color:rgb(91, 153, 219);
+}
+
+#tribute-link:clicked{
+  color:rgb(219, 91, 112);
+}
+
+header a:hover {
+  color: #5b99db;
+}
+
+header a:active {
+  color: #d9534f;
+}
+
+
+
+header a{
+  color:#eba000;
+}
+
+
+#footer{
+  width: 100%;
+  height: 2.5rem;
+  background-color:rgb(255, 230, 234);
+  text-align: center;
+}

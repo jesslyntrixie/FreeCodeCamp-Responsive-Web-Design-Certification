@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color:rgb(8, 49, 5)
+}
+
+
+html{
+    background-color: rgb(237, 255, 237);
+    font-family: poppins, 'Times New Roman';
+    min-width: 600px;
+    position: relative;
+}
+
+
+main{
+    width: 60%;
+    max-width: 1200px;
+    margin: auto auto;
+    text-align: center;
+    position: relative;
+    padding-top: 100px;
+}
+
+
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    background-color:rgb(62, 101, 0);
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    color:rgb(237, 255, 237);
+    z-index: 1000;
+    width:100%;
+}
+
+
+#header img{
+    height: 5vw;
+    margin: 20px;
+}
+
+#header nav{
+   position: absolute;
+   right: 20px;
+}
+
+#header ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    text-decoration: none;
+       
+}
+
+#header ul li a{
+    margin: auto 20px;
+    text-decoration: none;
+    color:rgb(237, 255, 237);
+    font-size: 1.5rem;  
+   
+}
+
+#header ul li a:hover{
+   color:rgb(62, 101, 0);
+   background-color:rgb(237, 255, 237);
+   
+}
+
+#header h1{
+    font-size: 3rem;
+    font-family: caveat, sans-serif;
+    color:rgb(237, 255, 237);
+}
+
+
+
+
+
+#formsect label{
+    font-size: 3rem;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin: auto auto;
+    margin-top: 50px;
+    color:rgb(8, 49, 5);
+}
+
+#formsect input:first-child{
+    display: block;
+    margin: 20px auto;
+    height:40px;
+    width: 300px;
+    font-size: 20px;
+}
+
+#formsect input:last-child{
+    display: block;
+    margin:10px auto;
+    height: 30px;
+     
+}
+
+h2{
+    font-size: 2rem;
+    color:brown;
+    margin-bottom: 15px;
+}
+
+#formsect button{
+   
+    height: 1.5rem;
+    background-color:rgb(237, 255, 237);
+    color:rgb(8, 49, 5);
+    border: 1px solid rgb(8, 49, 5);
+    width: 100px;    
+}
+
+#about{
+    margin: 100px auto;
+}
+
+#benefits{
+    margin: 100px auto;
+   
+}
+
+.listcontainer{
+    display: flex;
+    align-items: space-evenly;
+    
+}
+.listcontainer div{
+    /* border: 2px solid black; */
+    width: 33%;
+}
+
+.listcontainer i{
+    margin: 10px;
+    font-size: 30px; 
+    color: green;
+}
+
+#benefits > p{
+    margin-top: 20px;
+    
+}
+
+.infoheader{
+    font-weight: bold;
+    height: 80px;
+    
+    
+}
+
+.infosub{
+    margin-top: -25px;
+    font-style: italic;
+}
+
+
+#ordernow{
+    margin: 100px auto;
+
+}
+
+#pricelistcontainer{
+    display: flex;
+    align-items: space-evenly;
+    margin-top: 20px;
+}
+
+#pricelistcontainer div{
+    border: 2px solid rgb(41, 130, 0);
+    width: 33%;
+    margin: auto 5px;
+}
+
+.pricelist .type{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.price{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.description{
+    margin-bottom: 10px;
+}
+
+.pricelist button{
+    margin-bottom: 10px;
+    height: 1.5rem;
+    background-color:rgb(237, 255, 237);
+    color:rgb(8, 49, 5);
+    border: 1px solid rgb(8, 49, 5);
+    width: 100px;    
+}
+
+.pricelist button:hover{
+    color:rgb(237, 255, 237);
+    background-color:rgb(8, 49, 5);
+}
+
+
+    
+
+#footer {
+    display: flex;
+    background-color:rgb(62, 101, 0);
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 5rem;
+}
+
+#footer .footerrow1 p{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#footer div p a{
+    color:rgb(237, 255, 237);
+}
+
+#footer div{
+    margin: auto 20px; 
+}
+
+
+#footer div p a:hover{
+    background-color:rgb(237, 255, 237);
+    color:rgb(62, 101, 0);
+}
+
+
+
+
+#video{
+    margin: auto auto;
+    
+    margin-top: 100px;
+    width: 560px; 
+    height: 315px ;
+    
+}
+
+@media (max-width: 800px){
+    #video{
+        width: 373px;
+        height: 210px;
+    }
+    #header h1{
+        font-size: 2rem; 
+    }
+    #header ul li a{
+        font-size: 1rem;
+        margin: auto 10px;
+    }
+    
+    
+}
+
+
+
+/* Hide the iframe */
+#iframe {
+    display: none;
+}
