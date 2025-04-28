@@ -64,11 +64,8 @@ Each project fulfills the specific user stories and passes all the tests from th
 
 ---
 
-## License
 
-This project is licensed under the [MIT License](LICENSE).
 
----
 
 ## Acknowledgments
 
