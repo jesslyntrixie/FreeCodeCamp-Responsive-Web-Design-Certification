@@ -1,8 +1,4 @@
 
-Here’s a **README.md** you can use for your **FreeCodeCamp Responsive Web Design Certification** project repository:
-
----
-
 # FreeCodeCamp Responsive Web Design Certification
 
 This repository contains the five projects I completed as part of the **[freeCodeCamp Responsive Web Design Certification](https://www.freecodecamp.org/learn/2022/responsive-web-design/)**.
@@ -63,6 +59,9 @@ Each project demonstrates core skills in **HTML**, **CSS**, and responsive desig
 Each project fulfills the specific user stories and passes all the tests from the **freeCodeCamp Responsive Web Design Project Test Suite**.
 
 ---
+
+Love,
+Jesslyn <3
 
 
 
