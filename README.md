@@ -60,13 +60,15 @@ Each project fulfills the specific user stories and passes all the tests from th
 
 ---
 
-Love,
-Jesslyn <3
-
-
 
 
 ## Acknowledgments
 
 - Thanks to [freeCodeCamp](https://www.freecodecamp.org/) for their free and high-quality learning resources.
+
+
+
+Love,
+Jesslyn <3
+
 
